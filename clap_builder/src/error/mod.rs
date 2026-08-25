@@ -281,6 +281,10 @@ impl<F: ErrorFormatter> Error<F> {
 
     /// Render the error message to a [`StyledStr`].
     ///
+    /// Use [`print`] instead if you want to automatically respect the
+    /// environment's (lack of) color preference, or [`render().ansi()`][StyledStr::ansi]
+    /// if you want to preserve styles in the output.
+    ///
     /// # Example
     /// ```no_run
     /// # use clap_builder as clap;
@@ -292,7 +296,7 @@ impl<F: ErrorFormatter> Error<F> {
     ///     },
     ///     Err(err) => {
     ///         let err = err.render();
-    ///         println!("{err}");
+    ///         println!("{}", err.ansi());
     ///         // do_something
     ///     },
     /// };
