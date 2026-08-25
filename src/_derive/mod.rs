@@ -1,17 +1,17 @@
-//! # Documentation: Derive Reference
+//! # Documentation: Derive Reference.
 //!
-//! 1. [Overview](#overview)
-//! 2. [Attributes](#attributes)
-//!     1. [Terminology](#terminology)
+//! 1. [Overview](#overview).
+//! 2. [Attributes](#attributes).
+//!     1. [Terminology](#terminology).
 //!     2. [Command Attributes](#command-attributes)
-//!     2. [ArgGroup Attributes](#arggroup-attributes)
-//!     3. [Arg Attributes](#arg-attributes)
-//!     4. [ValueEnum Attributes](#valueenum-attributes)
-//!     5. [Possible Value Attributes](#possible-value-attributes)
-//! 3. [Field Types](#field-types)
-//! 4. [Doc Comments](#doc-comments)
-//! 5. [Mixing Builder and Derive APIs](#mixing-builder-and-derive-apis)
-//! 6. [Tips](#tips)
+//!     2. [ArgGroup Attributes](#arggroup-attributes).
+//!     3. [Arg Attributes](#arg-attributes).
+//!     4. [ValueEnum Attributes](#valueenum-attributes).
+//!     5. [Possible Value Attributes](#possible-value-attributes).
+//! 3. [Field Types](#field-types).
+//! 4. [Doc Comments](#doc-comments).
+//! 5. [Mixing Builder and Derive APIs](#mixing-builder-and-derive-apis).
+//! 6. [Tips](#tips).
 //!
 //! ## Overview
 //!
