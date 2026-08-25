@@ -15,7 +15,6 @@ use crate::ArgAction;
 use crate::INTERNAL_ERROR_MSG;
 use crate::Id;
 use crate::ValueHint;
-use crate::builder::ArgPredicate;
 use crate::builder::IntoResettable;
 use crate::builder::OsStr;
 use crate::builder::PossibleValue;
