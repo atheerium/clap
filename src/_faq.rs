@@ -16,7 +16,7 @@
 //! include `clap`) have their own strengths and weaknesses. Sometimes it just
 //! comes down to personal taste when all other factors are equal. When in doubt,
 //! try them all and pick one that you enjoy :). There's plenty of room in the Rust
-//! community for multiple implementations!
+//! community for multiple implementations!.
 //!
 //! For less detailed but more broad comparisons, see
 //! [argparse-benchmarks](https://github.com/rust-cli/argparse-benchmarks-rs).

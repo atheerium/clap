@@ -5,21 +5,21 @@
 //! ### Environmental context
 //!
 //! When you run a command line application, it is inside a terminal emulator, or terminal.
-//! This handles integration with the rest of your system including user input,
+//! This handles integration with the rest of your system including user input,.
 //! rendering, etc.
 //!
 //! The terminal will run inside of itself an interactive shell.
-//! The shell is responsible for showing the prompt, receiving input including the command you are writing,
+//! The shell is responsible for showing the prompt, receiving input including the command you are writing,.
 //! letting that command take over until completion, and then repeating.
 //! This is called a read-eval-print loop, or REPL.
-//! Typically the shell will take the command you typed and split it into separate arguments,
+//! Typically the shell will take the command you typed and split it into separate arguments,.
 //! including handling of quoting, escaping, and globbing.
 //! The parsing and evaluation of the command is shell specific.
-//! The shell will then determine which application to run and then pass the full command-line as
+//! The shell will then determine which application to run and then pass the full command-line as.
 //! individual arguments to your program.
 //! These arguments are exposed in Rust as [`std::env::args_os`].
 //!
-//! Windows is an exception in Shell behavior in that the command is passed as an individual
+//! Windows is an exception in Shell behavior in that the command is passed as an individual.
 //! string, verbatim, and the application must split the arguments.
 //! [`std::env::args_os`] will handle the splitting for you but will not handle globs.
 //!
@@ -35,18 +35,18 @@
 //!
 //! ### Argument Parsing
 //!
-//! The first argument of [`std::env::args_os`] is the [`Command::bin_name`]
+//! The first argument of [`std::env::args_os`] is the [`Command::bin_name`].
 //! which is usually limited to affecting [`Command::render_usage`].
 //! [`Command::no_binary_name`] and [`Command::multicall`] exist for rare cases when this assumption is not valid.
 //!
-//! Command-lines are a context-sensitive grammar,
+//! Command-lines are a context-sensitive grammar,.
 //! meaning the interpretation of an argument is based on the arguments that came before.
-//! Arguments come in one of several flavors:
+//! Arguments come in one of several flavors:.
 //! - Values
 //! - Flags
 //! - Subcommands
 //!
-//! When examining the next argument,
+//! When examining the next argument,.
 //! 1. If it starts with a `--`,
 //!    then that is a long Flag and all remaining text up to a `=` or the end is
 //!    matched to a [`Arg::long`], [`Command::long_flag`], or alias.
