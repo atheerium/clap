@@ -5206,3 +5206,4 @@ mod test {
         assert_eq!(p.to_string(), "<file1> <file2>");
     }
 }
+// PR #6505: Fix default_value_if predicate documentation
